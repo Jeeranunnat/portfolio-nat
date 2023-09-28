@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background: white;
+}
+.btn button {
+  font-size: 1.1em;
+  background: none;
+  padding: 0.5rem 1.5rem;
+  margin-right: 0.5em;
+  border-radius: 20px;
+  border: 2px solid lightgrey;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.btn button:hover {
+  cursor: pointer;
+  border: 2px solid gray;
+  font-weight: 600;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+header {
+  margin: 3em auto;
+}

@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  color: black;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.navbar .logo {
+  font-size: 1em;
+}
+.navbar .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .link .button {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.navbar .link .button li {
+  margin-right: 30px;
+}
+.navbar .link .button li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.1em;
+}
+.navbar .link .button li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.navbar .link .mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
