@@ -1,21 +1,16 @@
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100vw;
-  height: 100vh;
-}
-.about-header h1 {
-  font-size: 2em;
-  padding: 1.5em;
+  min-height: 100vh;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .about-content {
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 100%;
 }
-.about-content .content-area {
+.aboutArea-light,
+.aboutArea-dark {
   height: fit-content;
   display: flex;
   justify-content: space-between;
@@ -23,33 +18,83 @@
   border-radius: 20px;
   box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.05);
 }
-.about-content .content-left {
+.area-left {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.content-left .image-profile img {
+.area-left .image-profile img {
   width: 300px;
   height: 400px;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 8px 8px 0px #000000;
+  box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.1);
 }
-.about-content .content-right {
+.area-right {
   margin-left: 3em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: flex-start;
 }
-.content-right h1 span {
+.area-right h1 {
+  font-size: 1.5em;
+}
+.area-right h1 span {
+  font-size: 1em;
   font-weight: 300;
-  font-size: 0.8em;
 }
-.content-right p {
+.area-right p {
+  word-spacing: 3px;
+  text-align: left;
   font-size: 1.2em;
   font-weight: 400;
 }
-.content-right table {
-  font-size: 1.1em;
+.area-right table {
   text-align: left;
+  font-size: 1.1em;
+}
+.area-right table th {
+  vertical-align: top;
+  padding: 3px;
+}
+.area-right table td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+@media (max-width: 1180px) {
+  .aboutArea-light,
+  .aboutArea-dark {
+    flex-direction: column;
+  }
+  .area-left .image-profile img {
+    width: 200px;
+    height: 300px;
+  }
+  .area-right {
+    margin-left: 0;
+  }
+  .area-right h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    align-self: center;
+  }
+  .area-right p {
+    margin-bottom: 1em;
+  }
+
+  .area-right table {
+    margin-bottom: 1em;
+  }
+  .area-right .btn {
+    align-self: center;
+  }
+}
+
+@media (max-width: 802px) {
+  .aboutArea-light,
+  .aboutArea-dark {
+    padding: 1em;
+  }
 }

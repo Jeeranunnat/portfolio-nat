@@ -5,7 +5,10 @@ import './Skill.css';
 const Skill = () => {
   return (
     <section className="skill" id="skill">
-      <div className="skill-header">MY SKILL</div>
+      <div className="skill-header header">
+        <h1>MY SKILL</h1>
+      </div>
+
       <div className="skill-content">
         {SkillData.map((skill, index) => {
           return <CardSkill {...skill} key={index} />;

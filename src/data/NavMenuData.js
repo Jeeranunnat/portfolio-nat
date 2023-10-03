@@ -1,23 +1,23 @@
 const NavMenuData = [
   {
     title: 'HOME',
-    path: '/home#home',
+    path: '#home',
   },
   {
     title: 'ABOUT',
-    path: '/home#about',
+    path: '#about',
   },
   {
     title: 'SKILL',
-    path: '/skill',
+    path: '#skill',
   },
   {
     title: 'WORKSHOP',
-    path: '/workshop',
+    path: '#workshop',
   },
   {
     title: 'CONTACT',
-    path: '/contact',
+    path: '#contact',
   },
 ];
 export default NavMenuData;

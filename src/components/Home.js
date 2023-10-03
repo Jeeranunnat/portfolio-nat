@@ -1,11 +1,9 @@
-// import { HiDownload } from 'react-icons/hi';
-// import { RiAccountCircleLine } from 'react-icons/ri';
 import './Home.css';
 
 const Home = () => {
   return (
     <section className="home" id="home">
-      <div className="content">
+      <div className="home-content">
         <h3>Hello I,m</h3>
         <h1>Jeeranun Pingsahuan</h1>
         <div className="btn">
@@ -13,7 +11,8 @@ const Home = () => {
           <button>ABOUT ME</button>
         </div>
       </div>
-      <div className="profile-img">
+
+      <div className="home-image">
         <img alt="img-profile" src="/nat.jpg"></img>
       </div>
     </section>

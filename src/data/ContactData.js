@@ -26,7 +26,7 @@ const ContactData = [
   },
   {
     icon: HiOutlineHome,
-    name: 'Home',
+    name: 'Address',
     detail: '30 Moo5 Kathu,Phuket 83120 ',
     contactLink: 'See map',
   },

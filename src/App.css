@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-}
-body {
-  background: white;
+  padding: 0;
 }
 .btn button {
   font-size: 1.1em;
@@ -13,6 +11,7 @@ body {
   border-radius: 20px;
   border: 2px solid lightgrey;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  background-color: rgba(255, 255, 255, 0.896);
 }
 .btn button:hover {
   cursor: pointer;
@@ -21,6 +20,58 @@ body {
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
     rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
-header {
-  margin: 3em auto;
+.header h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+}
+.link button {
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.link button:hover {
+  font-weight: bold;
+}
+.light {
+  background-color: white;
+  color: black;
+}
+.dark {
+  background-color: #090d22;
+  color: white;
+}
+.nav-light,
+.footer-light {
+  background-color: white;
+}
+.nav-dark,
+.footer-dark {
+  background-color: hsla(0, 100%, 100%, 0.09);
+  box-shadow:
+		/* offset-x | offset-y | blur-radius | spread-radius | color */ 0px
+      4px 5px 0px hsla(0, 0%, 0%, 0.14),
+    0px 1px 10px 0px hsla(0, 0%, 0%, 0.12),
+    0px 2px 4px -1px hsla(0, 0%, 0%, 0.2);
+}
+.cardWorkshop-light,
+.cardSkill-light,
+.cardContact-light,
+.aboutArea-light {
+  background-color: white;
+}
+.cardWorkshop-dark,
+.cardSkill-dark,
+.cardContact-dark {
+  background-color: hsla(0, 100%, 100%, 0.15);
+  box-shadow:
+		/* offset-x | offset-y | blur-radius | spread-radius | color */ 0px
+      16px 24px 2px hsla(0, 0%, 0%, 0.14),
+    0px 6px 30px 5px hsla(0, 0%, 0%, 0.12),
+    0px 8px 10px -5px hsla(0, 0%, 0%, 0.2);
 }

@@ -1,15 +1,15 @@
-.card {
+#cardWorkshop {
   width: fit-content;
   height: fit-content;
-  padding: 20px;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+  border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: all 0.5s ease;
 }
-.card:hover {
+#cardWorkshop:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -17,8 +17,8 @@
 .card-img {
   width: 350px;
   height: 250px;
-  border-radius: 20px;
   background-color: white;
+  border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
@@ -29,18 +29,16 @@
   border-radius: 20px;
   object-fit: cover;
 }
-
 .card-name {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 500;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
-.card-link button {
-  background: none;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
-  padding: 0.5em;
-  color: gray;
+@media (max-width: 880px) {
+  .card-img,
+  .card-img img {
+    width: 300px;
+    height: 200px;
+  }
 }

@@ -1,39 +1,69 @@
-.navbar {
+#navbar {
+  width: 100vw;
+  height: fit-content;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
-  color: black;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  font-size: 1.5em;
+  padding: 0.5em 2em;
+  box-shadow: 0px 4px 8px -2px rgba(9, 30, 66, 0.25),
+    0px 0px 0px 1px rgba(9, 30, 66, 0.08);
 }
-.navbar .logo {
-  font-size: 1em;
-}
-.navbar .link {
+.navbar-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.navbar .link .button {
+.navbar-link-button {
   display: flex;
-  justify-content: center;
   list-style: none;
 }
-.navbar .link .button li {
-  margin-right: 30px;
+.navbar-link-button li {
+  list-style: none;
+  margin-right: 0.5em;
+  padding: 0.2em 0.4em;
+  border-radius: 8px;
 }
-.navbar .link .button li a {
-  text-decoration: none;
+.navbar-link-button li a {
   color: inherit;
-  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: 400;
 }
-.navbar .link .button li a:hover {
+.navbar-link-button li:hover {
   text-decoration: underline;
-  cursor: pointer;
 }
-.navbar .link .mode {
+.navbar-link-mode {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5em;
+}
+.navbar-link-mode li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (max-width: 1024px) {
+  #navbar {
+    font-size: 1.2em;
+  }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (max-width: 767px) {
+  #navbar {
+    font-size: 1em;
+  }
+  .navbar-link-button li {
+    margin-right: 0.3em;
+  }
+}
+@media (max-width: 560px) {
+  #navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-logo {
+    display: none;
+  }
 }

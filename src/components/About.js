@@ -1,28 +1,31 @@
+import { ThemeContext } from '../App';
+import { useContext } from 'react';
 import './About.css';
 const About = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section className="about" id="about">
-      <div className="about-header">
+    <section id="about" className="about">
+      <div className="about-header header">
         <h1>ABOUT ME</h1>
       </div>
+
       <div className="about-content">
-        <div className="content-area">
-          <div className="content-left">
+        <div
+          className={theme === 'light' ? 'aboutArea-light' : 'aboutArea-dark'}
+        >
+          <div className="area-left">
             <div className="image-profile">
               <img src={'./nat.jpg'} alt="image_profile"></img>
             </div>
           </div>
-          <div className="content-right">
+          <div className="area-right">
             <h1>
               <span>I am</span> Frontend Developer
             </h1>
             <p>
               I am Jeeranun Pingsahuan, junior web developer from Phuket,
-              Thailand.
-              <br /> I have rich experience in website design and building and
-              customization,
-              <br />
-              also I am good in React
+              Thailand.I have rich experience in website design and building and
+              customization,also I am good in React
             </p>
             <table>
               <tr>
