@@ -4,11 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 50px solid black;
-}
-.contact-header h1 {
-  font-size: 2em;
-  margin: 1.5em auto;
 }
 .contact-area {
   padding-bottom: 3em;

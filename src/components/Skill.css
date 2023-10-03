@@ -5,13 +5,13 @@
   flex-direction: column;
   align-items: center;
 }
-.skill-header {
-  font-size: 2em;
-  font-weight: 600;
-  margin: 1.5em auto;
-}
 .skill-content {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 2em;
+  grid-gap: 2em;
+}
+@media (max-width: 588px) {
+  .skill-content {
+    grid-gap: 1em;
+  }
 }

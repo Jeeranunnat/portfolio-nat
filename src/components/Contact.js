@@ -5,9 +5,10 @@ import './Contact.css';
 const Contact = () => {
   return (
     <section className="contact" id="contact">
-      <div className="contact-header">
+      <div className="contact-header header">
         <h1>CONTACT ME</h1>
       </div>
+
       <div className="contact-area">
         {ContactData.map((contact, index) => {
           return <CardComponent {...contact} key={index} />;
