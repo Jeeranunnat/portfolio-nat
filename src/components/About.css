@@ -60,3 +60,34 @@
   vertical-align: top;
   padding: 0.1vw;
 }
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  .aboutArea-light,
+  .aboutArea-dark {
+    flex-direction: column;
+  }
+  .area-right {
+    margin-left: 0;
+  }
+  .area-right h1 {
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+  }
+  .area-right p {
+    margin-bottom: 2vw;
+  }
+  .area-right table {
+    margin-bottom: 4vw;
+  }
+  .area-right .btn {
+    align-self: center;
+  }
+}
+/* mobile */
+@media screen and (max-width: 425px) {
+  .area-left .image-profile img {
+    width: 35vw;
+    height: 45vw;
+  }
+}

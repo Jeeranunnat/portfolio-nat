@@ -30,6 +30,20 @@ const Navigation = () => {
             );
           })}
         </div>
+
+        {/* nav-link-icon will show when use on mobile device */}
+        <div className="navbar-link-icon">
+          {NavMenuData.map((menu, index) => {
+            return (
+              <li>
+                <HashLink smooth to={menu.path}>
+                  <menu.icon />
+                </HashLink>
+              </li>
+            );
+          })}
+        </div>
+
         <div className="navbar-link-mode">
           <li onClick={toggleSwitch}>
             {theme === 'light' ? <BiSolidMoon /> : <BiSolidSun />}
