@@ -4,31 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 1.5rem;
+  padding: 0 2vw;
 }
 
 .workshop-card-area {
-  margin: 1.5em auto;
+  margin: 2vw auto;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 2rem;
-}
-
-@media (max-width: 1290px) {
-  .workshop-card-area {
-    grid-template-columns: auto auto;
-  }
-}
-
-/* Media Query for low resolution  Tablets, Ipads */
-@media (max-width: 767px) {
-  .workshop-card-area {
-    grid-gap: 1rem;
-  }
-}
-
-@media (max-width: 740px) {
-  .workshop-card-area {
-    grid-template-columns: auto;
-  }
+  grid-gap: 2vw;
 }
