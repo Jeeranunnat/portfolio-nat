@@ -1,7 +1,7 @@
 const Workshop = [
   {
-    type: 'React',
-    name: 'Shopping Cart',
+    type: 'VUE',
+    name: 'VUE',
     detail: 'safasdfasdfasdfasdgasga',
     imageUrl: '/cardImage/programmer.jpg',
   },
