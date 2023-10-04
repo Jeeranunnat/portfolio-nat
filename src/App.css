@@ -3,22 +3,50 @@
   margin: 0;
   padding: 0;
 }
-:root {
-  --extra-text: 3vw;
-  --big-text: 2vw;
-  --normal-text: 1.5vw;
-  --small-text: 1.2vw;
+/* setting front-size */
+body {
+  --extra-text: calc(26px + 0.390625vw);
+  --big-text: calc(20px + 0.390625vw);
+  --normal-text: calc(15px + 0.390625vw);
+  --small-text: calc(12px + 0.390625vw);
+}
+@media (min-width: 768px) {
+  :root {
+    --extra-text: calc(38px + 0.390625vw);
+    --big-text: calc(22px + 0.390625vw);
+    --normal-text: calc(18px + 0.390625vw);
+    --small-text: calc(14px + 0.390625vw);
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --extra-text: calc(39px + 0.390625vw);
+    --big-text: calc(23px + 0.390625vw);
+    --normal-text: calc(19px + 0.390625vw);
+    --small-text: calc(15px + 0.390625vw);
+  }
+}
+@media (min-width: 1280px) {
+  :root {
+    --extra-text: calc(30px + 0.390625vw);
+    --big-text: calc(24px + 0.390625vw);
+    --normal-text: calc(20px + 0.390625vw);
+    --small-text: calc(16px + 0.390625vw);
+  }
 }
 
 .btn button {
   font-size: var(--normal-text);
   background: none;
-  padding: 0.5vw 1.5vw;
-  margin-right: 0.5vw;
+  padding: 0.5vw 2vw;
+  margin-right: 2vw;
   border-radius: 20px;
   border: 0.2vw solid lightgrey;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   background-color: rgba(255, 255, 255, 0.896);
+}
+.btn button:last-child {
+  margin-right: 0;
 }
 .btn button:hover {
   cursor: pointer;
@@ -83,4 +111,11 @@
       16px 24px 2px hsla(0, 0%, 0%, 0.14),
     0px 6px 30px 5px hsla(0, 0%, 0%, 0.12),
     0px 8px 10px -5px hsla(0, 0%, 0%, 0.2);
+}
+
+/* mobile */
+@media screen and (max-width: 425px) {
+  .btn button {
+    padding: 1vw 4vw;
+  }
 }

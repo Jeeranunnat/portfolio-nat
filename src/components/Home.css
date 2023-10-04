@@ -25,11 +25,31 @@
   align-items: center;
 }
 .home-image img {
-  width: 25vw;
-  height: 25vw;
+  width: 30vw;
+  height: 30vw;
   background: white;
   border: 2vw solid white;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   object-fit: contain;
+}
+/* tablet */
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+  .home-content {
+    margin-right: 0;
+    margin-top: 6vw;
+    align-items: center;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 425px) {
+  .home-image,
+  .home-image img {
+    width: 45vw;
+    height: 45vw;
+  }
 }

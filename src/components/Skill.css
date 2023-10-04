@@ -10,3 +10,10 @@
   grid-template-columns: auto auto;
   grid-gap: 2vw;
 }
+/* mobile */
+@media screen and (max-width: 425px) {
+  .skill-content {
+    grid-template-columns: auto;
+    grid-gap: 4vw;
+  }
+}

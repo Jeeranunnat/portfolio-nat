@@ -1,5 +1,4 @@
 #contact-card {
-  height: auto;
   border-radius: 20px;
   padding: 1vw 8vw;
   margin-bottom: 2vw;
@@ -25,4 +24,11 @@
 #contact-card .contact-detail {
   font-size: var(--small-text);
   margin-bottom: 1vw;
+}
+/* mobile */
+@media screen and (max-width: 425px) {
+  #contact-card {
+    padding: 4vw;
+    margin-bottom: 4vw;
+  }
 }
