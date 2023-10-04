@@ -3,20 +3,13 @@
   margin: 0;
   padding: 0;
 }
-:root {
-  --extra-text: 3vw;
-  --big-text: 2vw;
-  --normal-text: 1.5vw;
-  --small-text: 1.2vw;
-}
-
 .btn button {
-  font-size: var(--normal-text);
+  font-size: 1.1em;
   background: none;
-  padding: 0.5vw 1.5vw;
-  margin-right: 0.5vw;
+  padding: 0.5rem 1.5rem;
+  margin-right: 0.5em;
   border-radius: 20px;
-  border: 0.2vw solid lightgrey;
+  border: 2px solid lightgrey;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   background-color: rgba(255, 255, 255, 0.896);
 }
@@ -28,20 +21,18 @@
     rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 .header h1 {
-  font-size: var(--extra-text);
+  font-size: 2em;
   text-transform: uppercase;
-  padding-top: 6.5vw;
-  padding-bottom: 3vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-top: 3em;
+  padding-bottom: 1.5em;
 }
 .link button {
-  font-size: var(--small-text);
+  font-size: 1em;
   font-weight: 400;
   text-transform: uppercase;
   border: none;
   border-radius: 10px;
-  padding: 0.5vw 2vw;
+  padding: 5px 20px;
   cursor: pointer;
 }
 .link button:hover {
