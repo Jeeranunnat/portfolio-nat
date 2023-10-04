@@ -1,26 +1,25 @@
 #cardSkill {
-  width: 250px;
+  min-width: 25vw;
   height: fit-content;
   border-radius: 10px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
-  padding: 0.5em;
+  padding: 0 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .cardSkill-icon {
-  font-size: 2em;
+  font-size: var(--extra-text);
   font-weight: 300;
-  padding: 0.5em;
-  width: 50%;
   border-radius: 50%;
+  padding: 1vw 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .cardSkill-icon .circle {
-  padding: 0.3em;
+  padding: 1vw;
   border-radius: 50%;
   object-fit: cover;
   display: flex;
@@ -29,15 +28,10 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
 }
 .cardSkill-skill {
-  font-size: 1.3em;
+  font-size: var(--normal-text);
   font-weight: 600;
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (max-width: 577px) {
-  #cardSkill {
-    width: 200px;
-  }
 }
