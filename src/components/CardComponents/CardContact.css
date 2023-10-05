@@ -1,10 +1,10 @@
 #contact-card {
-  border-radius: 20px;
-  padding: 1vw 8vw;
-  margin-bottom: 2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 20px;
+  padding: var(--normal-padding) var(--large-padding);
+  margin-bottom: var(--normal-margin);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 #contact-card:hover {
@@ -18,17 +18,17 @@
 #contact-card .contact-name {
   font-size: var(--normal-text);
   font-weight: 600;
-  margin-bottom: 0.5vw;
+  /* margin-bottom: var(--normal-margin); */
 }
 
 #contact-card .contact-detail {
   font-size: var(--small-text);
-  margin-bottom: 1vw;
+  margin-bottom: var(--normal-margin);
 }
 /* mobile */
 @media screen and (max-width: 425px) {
   #contact-card {
-    padding: 4vw;
-    margin-bottom: 4vw;
+    margin-bottom: var(--large-margin);
+    padding: var(--large-padding) var(--extra-padding);
   }
 }

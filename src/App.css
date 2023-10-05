@@ -3,12 +3,24 @@
   margin: 0;
   padding: 0;
 }
-/* setting front-size */
+a {
+  color: black;
+}
+
+/* setting responsive front-size padding margin */
 body {
   --extra-text: calc(26px + 0.390625vw);
   --big-text: calc(20px + 0.390625vw);
   --normal-text: calc(15px + 0.390625vw);
   --small-text: calc(12px + 0.390625vw);
+
+  --normal-padding: 2vw;
+  --large-padding: 4vw;
+  --extra-padding: 6vw;
+
+  --normal-margin: 2vw;
+  --large-margin: 4vw;
+  --extra-margin: 6vw;
 }
 @media (min-width: 768px) {
   :root {
@@ -38,8 +50,8 @@ body {
 .btn button {
   font-size: var(--normal-text);
   background: none;
-  padding: 0.5vw 2vw;
-  margin-right: 2vw;
+  padding: 0.5vw 1vw;
+  margin-right: 0.5vw;
   border-radius: 20px;
   border: 0.2vw solid lightgrey;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
@@ -55,14 +67,16 @@ body {
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
     rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
+
+/* header in each section */
 .header h1 {
   font-size: var(--extra-text);
   text-transform: uppercase;
-  padding-top: 6.5vw;
-  padding-bottom: 3vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-top: 8vw;
+  padding-bottom: var(--large-padding);
 }
+
+/* button on card */
 .link button {
   font-size: var(--small-text);
   font-weight: 400;
@@ -71,10 +85,13 @@ body {
   border-radius: 10px;
   padding: 0.5vw 2vw;
   cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.7);
 }
 .link button:hover {
-  font-weight: bold;
+  font-weight: 800;
 }
+
+/* setting mode */
 .light {
   background-color: white;
   color: black;
@@ -113,7 +130,7 @@ body {
     0px 8px 10px -5px hsla(0, 0%, 0%, 0.2);
 }
 
-/* mobile */
+/* responsive on mobile */
 @media screen and (max-width: 425px) {
   .btn button {
     padding: 1vw 4vw;

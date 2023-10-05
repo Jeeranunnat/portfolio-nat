@@ -1,4 +1,4 @@
-import CardWorkshop from './CardWorkshop.js';
+import CardWorkshop from '../components/CardComponents/CardWorkshop';
 import CardsData from '../data/CardsData.js';
 import { useEffect, useState } from 'react';
 import './Workshop.css';

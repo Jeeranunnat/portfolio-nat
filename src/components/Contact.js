@@ -1,5 +1,5 @@
 import ContactData from '../data/ContactData.js';
-import CardComponent from '../components/CardContact.js';
+import CardComponent from '../components/CardComponents/CardContact.js';
 import './Contact.css';
 
 const Contact = () => {

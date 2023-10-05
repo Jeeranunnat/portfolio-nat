@@ -2,23 +2,22 @@
   width: 30vw;
   height: fit-content;
   border-radius: 10px;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
-    rgba(17, 17, 26, 0.05) 0px 8px 32px;
-  padding: 1.5vw 1vw;
   display: flex;
   align-items: center;
+  padding: var(--normal-padding) var(--large-padding);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 .cardSkill-icon {
   font-size: var(--extra-text);
   font-weight: 300;
   border-radius: 50%;
-  padding: 1vw 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .cardSkill-icon .circle {
-  padding: 1vw;
+  padding: var(--normal-padding);
   border-radius: 50%;
   object-fit: cover;
   display: flex;
@@ -38,6 +37,6 @@
 @media screen and (max-width: 425px) {
   #cardSkill {
     width: 60vw;
-    padding: 4vw;
+    padding: var(--large-padding) var(--extra-padding);
   }
 }

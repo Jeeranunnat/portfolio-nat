@@ -1,6 +1,6 @@
 import './CardWorkshop.css';
 import { useContext } from 'react';
-import { ThemeContext } from '../App';
+import { ThemeContext } from '../../App';
 
 const Card = (item) => {
   const { theme } = useContext(ThemeContext);

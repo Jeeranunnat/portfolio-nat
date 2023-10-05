@@ -1,5 +1,5 @@
 #navbar {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -48,6 +48,10 @@
 @media screen and (max-width: 425px) {
   #navbar {
     bottom: 0;
+    background-color: rgba(255, 255, 255, 0.734);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .navbar-logo {
     display: none;
@@ -63,13 +67,12 @@
     padding: 4vw;
   }
   .navbar-link-icon {
-    width: 100vw;
+    width: 70vw;
     list-style: none;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
     font-size: var(--extra-text);
-    background-color: rgba(255, 255, 255, 0.734);
   }
   .navbar-link-icon li a {
     color: black;
