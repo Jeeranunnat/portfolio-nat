@@ -1,10 +1,12 @@
 .about {
   width: 100vw;
   min-height: 100vh;
-  text-align: center;
-  padding: 1vw 8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about-content {
+  width: 90vw;
   display: flex;
   justify-content: center;
 }
@@ -13,7 +15,7 @@
   height: fit-content;
   display: flex;
   justify-content: space-between;
-  padding: 3vw;
+  padding: var(--normal-padding);
   border-radius: 20px;
   box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.05);
 }
@@ -30,7 +32,7 @@
   box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.1);
 }
 .area-right {
-  margin-left: 2vw;
+  margin-left: var(--normal-margin);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -52,13 +54,9 @@
   text-align: left;
   font-size: var(--normal-text);
 }
-.area-right table th {
-  vertical-align: top;
-  padding: 0.1vw;
-}
+.area-right table th,
 .area-right table td {
   vertical-align: top;
-  padding: 0.1vw;
 }
 
 /* tablet */
@@ -70,15 +68,11 @@
   .area-right {
     margin-left: 0;
   }
-  .area-right h1 {
-    margin-top: 4vw;
-    margin-bottom: 2vw;
-  }
-  .area-right p {
-    margin-bottom: 2vw;
-  }
-  .area-right table {
-    margin-bottom: 4vw;
+  .area-right h1,
+  .area-right p,
+  .area-right table,
+  .area-right .btn {
+    margin-bottom: var(--normal-margin);
   }
   .area-right .btn {
     align-self: center;
@@ -89,5 +83,14 @@
   .area-left .image-profile img {
     width: 35vw;
     height: 45vw;
+  }
+  .area-right h1,
+  .area-right p,
+  .area-right table,
+  .area-right .btn {
+    margin-bottom: var(--large-margin);
+  }
+  .area-right h1 {
+    margin-top: var(--large-margin);
   }
 }

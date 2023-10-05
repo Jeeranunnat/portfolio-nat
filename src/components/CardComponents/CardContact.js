@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import './CardContact.css';
-import { ThemeContext } from '../App';
+import { ThemeContext } from '../../App';
 
 const CardContact = (contact) => {
   const { theme } = useContext(ThemeContext);

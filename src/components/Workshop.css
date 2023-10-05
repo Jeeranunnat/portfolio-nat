@@ -4,11 +4,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 2vw;
+  padding: 0 var(--normal-padding);
 }
 
 .workshop-card-area {
-  margin: 2vw auto;
+  margin: var(--normal-margin);
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 2vw;
