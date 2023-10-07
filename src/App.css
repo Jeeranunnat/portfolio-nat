@@ -49,13 +49,12 @@ body {
 
 .btn button {
   font-size: var(--normal-text);
-  background: none;
   padding: 0.5vw 1vw;
   margin-right: 0.5vw;
   border-radius: 20px;
-  border: 0.2vw solid lightgrey;
+  border: 2px solid lightgrey;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-  background-color: rgba(255, 255, 255, 0.896);
+  /* background-color: rgba(255, 255, 255, 0.896); */
 }
 .btn button:last-child {
   margin-right: 0;
