@@ -13,6 +13,13 @@
   grid-template-columns: auto auto auto;
   grid-gap: 2vw;
 }
+.activeButton {
+  font-weight: 800;
+  background-color: lightgray;
+}
+.notActiveButton {
+  font-weight: normal;
+}
 /* tablet */
 @media screen and (max-width: 768px) {
   .workshop-card-area {

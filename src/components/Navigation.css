@@ -44,6 +44,13 @@
   align-items: center;
   list-style: none;
 }
+.active {
+  text-decoration: underline;
+}
+.notActive {
+  text-decoration: none;
+}
+
 /* mobile */
 @media screen and (max-width: 425px) {
   #navbar {

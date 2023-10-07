@@ -2,12 +2,12 @@ import NavMenuData from '../data/NavMenuData';
 import { HashLink } from 'react-router-hash-link';
 import { BiSolidSun, BiSolidMoon } from 'react-icons/bi';
 import './Navigation.css';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { ThemeContext } from '../App';
 
 const Navigation = () => {
   const { theme, setTheme } = useContext(ThemeContext);
-
+  const [activeTitle, setActiveTitle] = useState('');
   const toggleSwitch = (check) => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
@@ -22,7 +22,10 @@ const Navigation = () => {
         <div className="navbar-link-button">
           {NavMenuData.map((menu, index) => {
             return (
-              <li>
+              <li
+                onClick={() => setActiveTitle(menu.title)}
+                className={menu.title === activeTitle ? 'active' : 'notActive'}
+              >
                 <HashLink smooth to={menu.path}>
                   {menu.title}
                 </HashLink>

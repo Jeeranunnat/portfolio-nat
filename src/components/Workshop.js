@@ -5,11 +5,13 @@ import './Workshop.css';
 
 const Workshop = () => {
   const [LinkGroup, setLinkGroup] = useState([]);
+  const [activeButton, setActiveButton] = useState('ALL');
   const [datas, setData] = useState(CardsData);
   const newLink = ['ALL'];
 
   // Filter data when user click button
   const filterData = (type) => {
+    setActiveButton(type);
     if (type !== 'ALL') {
       setData(CardsData.filter((data) => data.type === type));
     } else setData(CardsData);
@@ -35,7 +37,13 @@ const Workshop = () => {
       <div className="workshop-link btn">
         {LinkGroup.map((element, index) => {
           return (
-            <button key={index} onClick={() => filterData(element)}>
+            <button
+              key={index}
+              onClick={() => filterData(element)}
+              className={
+                element === activeButton ? 'activeButton' : 'notActiveButton'
+              }
+            >
               {element}
             </button>
           );
