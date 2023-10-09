@@ -15,7 +15,6 @@
 }
 .activeButton {
   font-weight: 800;
-  background-color: lightgray;
 }
 .notActiveButton {
   font-weight: normal;
