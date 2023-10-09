@@ -53,8 +53,7 @@ body {
   margin-right: 0.5vw;
   border-radius: 20px;
   border: 2px solid lightgrey;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-  /* background-color: rgba(255, 255, 255, 0.896); */
+  background-color: rgba(255, 255, 255, 0.896);
 }
 .btn button:last-child {
   margin-right: 0;
@@ -65,6 +64,12 @@ body {
   font-weight: 600;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
     rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+.activeButton {
+  font-weight: 800;
+}
+.notActiveButton {
+  font-weight: normal;
 }
 
 /* header in each section */
