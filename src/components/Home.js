@@ -8,7 +8,9 @@ const Home = () => {
         <h1>Jeeranun Pingsahuan</h1>
         <div className="btn">
           <button>DOWLOAD CV</button>
-          <button>ABOUT ME</button>
+          <button>
+            <a href="#about">ABOUT ME</a>
+          </button>
         </div>
       </div>
 

@@ -6,7 +6,10 @@
   align-items: center;
   padding: 0 var(--normal-padding);
 }
-
+.workshop-link {
+  display: flex;
+  justify-content: center;
+}
 .workshop-card-area {
   margin: var(--normal-margin);
   display: grid;
@@ -30,5 +33,9 @@
   .workshop-card-area {
     grid-template-columns: auto;
     grid-gap: 4vw;
+  }
+  .workshop-link {
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 }

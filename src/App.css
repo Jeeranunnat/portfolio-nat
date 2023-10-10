@@ -50,10 +50,15 @@ body {
 .btn button {
   font-size: var(--normal-text);
   padding: 0.5vw 1vw;
+  margin-bottom: 1vw;
   margin-right: 0.5vw;
   border-radius: 20px;
   border: 2px solid lightgrey;
   background-color: rgba(255, 255, 255, 0.896);
+}
+.btn button a {
+  text-decoration: none;
+  color: black;
 }
 .btn button:last-child {
   margin-right: 0;
@@ -90,6 +95,10 @@ body {
   padding: 0.5vw 2vw;
   cursor: pointer;
   background-color: rgba(211, 211, 211, 0.7);
+}
+.link button a {
+  text-decoration: none;
+  color: black;
 }
 .link button:hover {
   font-weight: 800;

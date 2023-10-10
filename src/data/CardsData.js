@@ -1,6 +1,12 @@
 const Workshop = [
   {
     type: 'HTML-CSS-JS',
+    name: 'Netflix',
+    imagePath: '/cardImage/netflix.png',
+    href: 'https://playful-crisp-9a9d86.netlify.app/',
+  },
+  {
+    type: 'HTML-CSS-JS',
     name: 'Web basic',
     imagePath: '/cardImage/web-html-css-js.png',
     href: 'https://superlative-pony-6e3711.netlify.app/',
