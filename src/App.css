@@ -98,7 +98,6 @@ body {
 }
 .link button a {
   text-decoration: none;
-  color: black;
 }
 .link button:hover {
   font-weight: 800;
