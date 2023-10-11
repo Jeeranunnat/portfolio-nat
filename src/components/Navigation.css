@@ -15,6 +15,12 @@
 .navbar-link-icon {
   display: none;
 }
+/* .navbar-link-icon li:first-child {
+  padding: 1vw 2.5vw 0.8vw 2.5vw;
+  background-color: lightgray;
+  border-radius: 50%;
+  font-weight: 800;
+} */
 
 .navbar-link-button {
   display: flex;

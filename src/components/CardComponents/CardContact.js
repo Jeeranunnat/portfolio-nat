@@ -13,7 +13,9 @@ const CardContact = (contact) => {
       <div className="contact-name">{contact.name}</div>
       <div className="contact-detail">{contact.detail}</div>
       <div className="contact-link link">
-        <button>{contact.contactLink}</button>
+        <button>
+          <a href={contact.href}>{contact.contactLink}</a>
+        </button>
       </div>
     </div>
   );
