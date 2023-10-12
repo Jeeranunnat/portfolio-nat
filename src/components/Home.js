@@ -1,4 +1,5 @@
 import './Home.css';
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -9,7 +10,9 @@ const Home = () => {
         <div className="btn">
           <button>DOWLOAD CV</button>
           <button>
-            <a href="#about">ABOUT ME</a>
+            <Link activeClass="active" smooth spy to="about">
+              ABOUT ME
+            </Link>
           </button>
         </div>
       </div>
