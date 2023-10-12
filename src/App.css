@@ -6,6 +6,9 @@
 a {
   color: black;
 }
+li {
+  color: black;
+}
 
 /* setting responsive front-size padding margin */
 body {
