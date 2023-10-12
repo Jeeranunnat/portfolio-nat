@@ -58,7 +58,6 @@ body {
 }
 .btn button a {
   text-decoration: none;
-  color: black;
 }
 .btn button:last-child {
   margin-right: 0;

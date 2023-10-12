@@ -6,27 +6,27 @@ import { IoSchoolOutline } from 'react-icons/io5';
 const NavMenuData = [
   {
     title: 'HOME',
-    path: '#home',
+    path: 'home',
     icon: AiOutlineHome,
   },
   {
     title: 'ABOUT',
-    path: '#about',
+    path: 'about',
     icon: CgProfile,
   },
   {
     title: 'SKILL',
-    path: '#skill',
+    path: 'skill',
     icon: IoSchoolOutline,
   },
   {
     title: 'WORKSHOP',
-    path: '#workshop',
+    path: 'workshop',
     icon: CgWebsite,
   },
   {
     title: 'CONTACT',
-    path: '#contact',
+    path: 'contact',
     icon: TiContacts,
   },
 ];
