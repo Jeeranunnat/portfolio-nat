@@ -36,7 +36,7 @@ const Navigation = () => {
           {NavMenuData.map((menu, index) => {
             return (
               <li>
-                <Link activeClass="activeIcon" smooth spy to={menu.path}>
+                <Link activeClass="active" smooth spy to={menu.path}>
                   <menu.icon />
                 </Link>
               </li>
