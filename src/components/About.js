@@ -58,7 +58,11 @@ const About = () => {
               </tr>
             </table>
             <div className="btn">
-              <button>DOWLOAD CV</button>
+              <button>
+                <a href="https://drive.google.com/file/d/1BuWIH7fymqIcT-wU7PA0DwXJW5JhTZs-/view?usp=sharing">
+                  DOWLOAD CV
+                </a>
+              </button>
             </div>
           </div>
         </div>

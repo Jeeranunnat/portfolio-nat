@@ -8,7 +8,11 @@ const Home = () => {
         <h3>Hello I,m</h3>
         <h1>Jeeranun Pingsahuan</h1>
         <div className="btn">
-          <button>DOWLOAD CV</button>
+          <button>
+            <a href="https://drive.google.com/file/d/1BuWIH7fymqIcT-wU7PA0DwXJW5JhTZs-/view?usp=sharing">
+              DOWLOAD CV
+            </a>
+          </button>
           <button>
             <Link activeClass="active" smooth spy to="about">
               ABOUT ME
