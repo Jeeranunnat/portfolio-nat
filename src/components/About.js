@@ -15,7 +15,7 @@ const About = () => {
         >
           <div className="area-left">
             <div className="image-profile">
-              <img src={'./nat.jpg'} alt="image_profile"></img>
+              <img src={'./nat.png'} alt="image_profile"></img>
             </div>
           </div>
           <div className="area-right">
