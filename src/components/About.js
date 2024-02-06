@@ -59,7 +59,7 @@ const About = () => {
             </table>
             <div className="btn">
               <button>
-                <a href="https://drive.google.com/file/d/1BuWIH7fymqIcT-wU7PA0DwXJW5JhTZs-/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1hY9KYq2E4FUDDhC5mlmqKZoJq04U7yuH/view?usp=share_link">
                   DOWLOAD CV
                 </a>
               </button>
